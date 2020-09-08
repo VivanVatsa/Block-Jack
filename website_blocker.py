@@ -18,7 +18,7 @@ while True:
                 if website in content:
                     pass
                 else:
-                    file.write(website)
+                    file.write(redirect + " " + website + "\n")
 
     else:
         print("yeah you can chill now zuckerrrr")
