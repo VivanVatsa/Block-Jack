@@ -8,12 +8,17 @@ website_list = ["www.instagram.com", "instagram.com",
                 "https://outlook.live.com/mail/0/inbox", "www.outlook.com"]
 
 while True:
-    if dt(dt.now().year, dt.now().month, dt.now().day, 8) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 16):
+    if dt(dt.now().year, dt.now().month, dt.now().day, 20) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 23):
         print("this is your working hour A##, concentrate dumbo!!")
         # r+ is used to simultaenously read and then accordingly write onto it.
         with open(hosts_temp, 'r+') as file:
             content = file.read()
-            print(content)
+            # print(content)
+            for website in website_list:
+                if website in content:
+                    pass
+                else:
+                    file.write(website)
 
     else:
         print("yeah you can chill now zuckerrrr")
