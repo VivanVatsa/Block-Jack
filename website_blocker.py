@@ -19,8 +19,6 @@ while True:
                     pass
                 else:
                     file.write(redirect + " " + website + "\n")
-
     else:
         print("yeah you can chill now zuckerrrr")
-    # print(1)
     time.sleep(5)
