@@ -4,7 +4,8 @@ from datetime import datetime as dt
 hosts_temp = "hosts"
 hosts_path = r"C:\Windows\System32\drivers\etc\hosts"
 redirect = "127.0.0.1"
-website_list = ["https://outlook.live.com/mail/0/inbox", "www.outlook.com"]
+website_list = ["https://outlook.live.com/mail/0/inbox",
+                "www.outlook.com", "instagram.com", "www.instagram.com"]
 
 while True:
     if dt(dt.now().year, dt.now().month, dt.now().day, 19) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 23):
