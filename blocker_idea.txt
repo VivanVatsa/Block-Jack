@@ -1,0 +1,7 @@
+website blocker invention idea / logic
+
+-> it needs to be time dependent as it will block those websites when im working.
+-> comparison of dates with the current and then giving in the buffer is what needs to be done for now
+-> got to open hosts file template in python script but with "r+" as it has to be read and then written so
+-> then insert / read it in a temp file where the hosts temp is saved.
+-> then through the script copy content of the hosts txt format into python script
