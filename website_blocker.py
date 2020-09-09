@@ -23,7 +23,7 @@ while True:
         with open(hosts_temp, 'r+') as file:
             # here now you can see content is now a list
             content = file.readlines()
-            file.seek()
+            file.seek(0)
             for line in content:
                 if not any(website in line for website in website_list):
                     file.write(line)
