@@ -11,7 +11,7 @@ while True:
     if dt(dt.now().year, dt.now().month, dt.now().day, 19) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 23):
         print("this is your working hour A##, concentrate dumbo!!")
         # r+ is used to simultaenously read and then accordingly write onto it.
-        with open(hosts_temp, 'r+') as file:
+        with open(hosts_path, 'r+') as file:
             content = file.read()
             # print(content)
             for website in website_list:
@@ -20,7 +20,7 @@ while True:
                 else:
                     file.write(redirect + " " + website + "\n")
     else:
-        with open(hosts_temp, 'r+') as file:
+        with open(hosts_path, 'r+') as file:
             # here now you can see content is now a list
             content = file.readlines()
             file.seek(0)
